@@ -9,7 +9,6 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/../../devel/lib/laser_scan_converter/laser_scan_converter",
-            "envFile": "${workspaceFolder}/.env",
             "args": [
                 "run"
             ],
