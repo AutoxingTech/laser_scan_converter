@@ -1,0 +1,6 @@
+<launch>
+    <arg name="output" default="screen" />
+
+    <node name="laser_scan_converter" pkg="laser_scan_converter" type="laser_scan_converter" required="true" output="$(arg output)">
+    </node>
+</launch>
