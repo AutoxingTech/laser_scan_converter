@@ -10,7 +10,6 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   message_generation
   tf
-  cln_msgs
 )
 
 add_message_files(DIRECTORY msgs FILES AxLaserScan.msg)
@@ -24,7 +23,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 file(GLOB SRC_FILES
     src/main.cpp
-    # src/laser_scan_converter.cpp
+    src/laser_converter.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
